@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Karabo Tladi — Computer Science student at UWC, entrepreneur, Moshal Scholar, and innovator building at the intersection of human experience and intelligent technology." />
+    <meta name="keywords" content="Karabo Tladi, Full Stack Developer, UWC, Computer Science, Entrepreneur, Moshal Scholar" />
+    <meta property="og:title" content="Karabo Tladi — Builder. Thinker. Innovator." />
+    <meta property="og:description" content="2nd Year CS student at UWC. Director at an Auction Enterprise. Moshal Scholar. Building where human experience meets intelligent technology." />
+    <meta property="og:image" content="assets/images/hero/karabo-og.jpg" />
+    <title>Karabo Tladi — Builder. Thinker. Innovator.</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Outfit:wght@300;400;500;600&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/hero.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/timeline.css" />
+    <link rel="stylesheet" href="css/projects.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body data-theme="dark">
+
+<!-- CURSOR -->
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- NAV -->
+<nav class="nav" id="mainNav">
+    <a href="#home" class="nav-logo">
+        <span class="logo-initials">KT</span>
+        <span class="logo-slash">/</span>
+        <span class="logo-text">Karabo Tladi</span>
+    </a>
+    <ul class="nav-links">
+        <li><a href="#about" data-nav>About</a></li>
+        <li><a href="#timeline" data-nav>Journey</a></li>
+        <li><a href="#projects" data-nav>Work</a></li>
+        <li><a href="#vision" data-nav>Vision</a></li>
+        <li><a href="#contact" data-nav>Contact</a></li>
+    </ul>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <span class="toggle-icon">◑</span>
+    </button>
+    <button class="nav-hamburger" id="navHamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+    </button>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+    <ul>
+        <li><a href="#about" class="mobile-link">About</a></li>
+        <li><a href="#timeline" class="mobile-link">Journey</a></li>
+        <li><a href="#projects" class="mobile-link">Work</a></li>
+        <li><a href="#vision" class="mobile-link">Vision</a></li>
+        <li><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="home">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-noise"></div>
+
+    <div class="hero-content">
+        <div class="hero-eyebrow reveal-up">
+            <span class="eyebrow-dot"></span>
+            <span>2nd Year Computer Science · University of the Western Cape</span>
+        </div>
+
+        <h1 class="hero-title reveal-up" style="--delay: 0.1s">
+            <span class="title-line">Karabo</span>
+            <span class="title-line italic">Tladi.</span>
+        </h1>
+
+        <p class="hero-descriptor reveal-up" style="--delay: 0.2s">
+            Builder&nbsp;&nbsp;/&nbsp;&nbsp;Entrepreneur&nbsp;&nbsp;/&nbsp;&nbsp;Innovator
+        </p>
+
+        <p class="hero-bio reveal-up" style="--delay: 0.3s">
+            I build at the intersection of <em>human experience</em> and <em>intelligent technology</em>.
+            Director. Scholar. Photographer. Chess player. Relentlessly curious.
+        </p>
+
+        <div class="hero-ctas reveal-up" style="--delay: 0.4s">
+            <a href="#timeline" class="btn-primary">Explore My Journey</a>
+            <a href="#projects" class="btn-ghost">See My Work</a>
+        </div>
+
+        <div class="hero-credentials reveal-up" style="--delay: 0.5s">
+            <div class="credential">
+                <span class="cred-icon">◆</span>
+                <span>Moshal Scholar</span>
+            </div>
+            <div class="credential">
+                <span class="cred-icon">◆</span>
+                <span>Auction Enterprise Director</span>
+            </div>
+            <div class="credential">
+                <span class="cred-icon">◆</span>
+                <span>Presidential Events Attendee</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="hero-visual reveal-right" style="--delay: 0.3s">
+        <!-- Replace src with your actual photo -->
+        <div class="hero-photo-frame">
+            <div class="photo-placeholder">
+                <img src="assets/images/hero/karabo-hero.jpg" alt="Karabo Tladi" onerror="this.parentElement.classList.add('no-photo')" />
+                <div class="photo-fallback">KT</div>
+            </div>
+            <div class="photo-accent-ring"></div>
+            <div class="photo-label">
+                <span class="mono">karabo_tladi.jpg</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="hero-scroll-hint">
+        <span class="mono">scroll</span>
+        <div class="scroll-line"></div>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+    <div class="container">
+        <div class="about-grid">
+
+            <div class="about-left">
+                <p class="section-overline reveal-up">Who I Am</p>
+                <h2 class="section-title reveal-up" style="--delay:0.1s">
+                    More than a <br/><em>developer.</em>
+                </h2>
+                <div class="about-body reveal-up" style="--delay:0.15s">
+                    <p>I'm Karabo Tladi — a second-year Computer Science student at the <strong>University of the Western Cape</strong>, a Moshal Scholar, and a Director at an Auction Enterprise. My world sits at the edge of technology, leadership, and creative expression.</p>
+                    <p>I've stood in rooms with presidents and sat across chess boards with opponents who've sharpened my thinking. I've led student initiatives, captured moments through a lens, and built systems from the ground up. Every experience has layered who I am.</p>
+                    <p>I'm drawn to the <strong>hard problems</strong> — where smart systems can amplify human potential, where a product isn't just functional but deeply meaningful to the person using it.</p>
+                </div>
+
+                <div class="about-interests reveal-up" style="--delay:0.2s">
+                    <h4>What drives me</h4>
+                    <div class="interest-chips">
+                        <span class="chip">AI & Machine Learning</span>
+                        <span class="chip">Product Design</span>
+                        <span class="chip">Entrepreneurship</span>
+                        <span class="chip">Chess Strategy</span>
+                        <span class="chip">Photography</span>
+                        <span class="chip">Leadership</span>
+                        <span class="chip">Human-Computer Interaction</span>
+                        <span class="chip">Smart Systems</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-right reveal-right" style="--delay:0.2s">
+                <div class="identity-stack">
+
+                    <div class="identity-card card-student">
+                        <div class="icard-icon">🎓</div>
+                        <div>
+                            <h5>CS Student</h5>
+                            <p>2nd Year · UWC · Moshal Scholar</p>
+                        </div>
+                    </div>
+
+                    <div class="identity-card card-entrepreneur">
+                        <div class="icard-icon">⚡</div>
+                        <div>
+                            <h5>Director & Entrepreneur</h5>
+                            <p>Auction Enterprise · Leadership in practice</p>
+                        </div>
+                    </div>
+
+                    <div class="identity-card card-creative">
+                        <div class="icard-icon">📷</div>
+                        <div>
+                            <h5>Photographer & Creative</h5>
+                            <p>Visual storytelling · Capturing human moments</p>
+                        </div>
+                    </div>
+
+                    <div class="identity-card card-thinker">
+                        <div class="icard-icon">♟</div>
+                        <div>
+                            <h5>Chess Player</h5>
+                            <p>Strategy · Pattern recognition · Patience</p>
+                        </div>
+                    </div>
+
+                    <div class="identity-card card-builder">
+                        <div class="icard-icon">🔬</div>
+                        <div>
+                            <h5>Tech Builder</h5>
+                            <p>Full Stack · AI-curious · Product-minded</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- TIMELINE -->
+<section class="timeline-section" id="timeline">
+    <div class="container">
+        <p class="section-overline reveal-up">The Making of Me</p>
+        <h2 class="section-title reveal-up" style="--delay:0.1s">My Journey</h2>
+        <p class="section-sub reveal-up" style="--delay:0.15s">Not a list of checkboxes — a story of compounding experiences that shaped a builder.</p>
+
+        <div class="timeline" id="timelineContainer">
+
+            <div class="timeline-item reveal-up" style="--delay:0.1s" data-year="2024–Now">
+                <div class="tl-marker">
+                    <div class="tl-dot tl-dot--active"></div>
+                    <div class="tl-year">2024 – Now</div>
+                </div>
+                <div class="tl-card">
+                    <div class="tl-tag tl-tag--enterprise">Enterprise</div>
+                    <h3>Director, Auction Enterprise</h3>
+                    <p>Stepped into a Director role at an Auction Enterprise — learning what it means to lead, negotiate, and run operational systems in a real commercial environment. Entrepreneurship isn't theory here; it's decisions with consequences.</p>
+                    <ul class="tl-highlights">
+                        <li>Business operations & strategy</li>
+                        <li>Client negotiation & stakeholder management</li>
+                        <li>Leading teams toward commercial outcomes</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item reveal-up" style="--delay:0.15s" data-year="2024–Now">
+                <div class="tl-marker">
+                    <div class="tl-dot tl-dot--active"></div>
+                    <div class="tl-year">2024 – Now</div>
+                </div>
+                <div class="tl-card">
+                    <div class="tl-tag tl-tag--internship">Internship</div>
+                    <h3>Full Stack Developer Intern · Future Interns</h3>
+                    <p>Building real-world web applications in a structured program. From architecting this portfolio to full-stack projects using HTML, CSS, JS, and Node.js — this is where code meets professional craft.</p>
+                    <ul class="tl-highlights">
+                        <li>Full-stack web development in production context</li>
+                        <li>Node.js, Express, MongoDB backend systems</li>
+                        <li>Responsive, accessible, performant interfaces</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item reveal-up" style="--delay:0.2s" data-year="2024">
+                <div class="tl-marker">
+                    <div class="tl-dot tl-dot--scholar"></div>
+                    <div class="tl-year">2024</div>
+                </div>
+                <div class="tl-card">
+                    <div class="tl-tag tl-tag--scholar">Scholarship</div>
+                    <h3>Moshal Scholarship Programme</h3>
+                    <p>Selected as a Moshal Scholar — a highly competitive programme identifying and investing in exceptional students with leadership potential from South Africa and Israel. The scholarship is about character as much as academics.</p>
+                    <ul class="tl-highlights">
+                        <li>Merit-based recognition of academic & leadership excellence</li>
+                        <li>Access to a network of top scholars and mentors</li>
+                        <li>Reinforced commitment to giving back through leadership</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item reveal-up" style="--delay:0.25s" data-year="2024">
+                <div class="tl-marker">
+                    <div class="tl-dot tl-dot--event"></div>
+                    <div class="tl-year">2024</div>
+                </div>
+                <div class="tl-card">
+                    <div class="tl-tag tl-tag--leadership">Leadership</div>
+                    <h3>Presidential Events — South Africa</h3>
+                    <p>Attended high-level Presidential events in South Africa — rooms where national dialogue, governance, and vision intersect. Sitting in those spaces reinforced what it means to think beyond yourself and lead with purpose at scale.</p>
+                    <ul class="tl-highlights">
+                        <li>Exposure to national leadership and governance</li>
+                        <li>Understanding policy, impact, and civic responsibility</li>
+                        <li>Expanded perspective on building at scale</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item reveal-up" style="--delay:0.3s" data-year="2023–Now">
+                <div class="tl-marker">
+                    <div class="tl-dot tl-dot--active"></div>
+                    <div class="tl-year">2023 – Now</div>
+                </div>
+                <div class="tl-card">
+                    <div class="tl-tag tl-tag--academic">Academic</div>
+                    <h3>BSc Computer Science · University of the Western Cape</h3>
+                    <p>Currently in my 2nd year studying Computer Science at UWC. Covering algorithms, data structures, systems programming, and the mathematical foundations that underpin intelligent systems. Every module is a tool for the future I'm building toward.</p>
+                    <ul class="tl-highlights">
+                        <li>Data Structures & Algorithms</li>
+                        <li>Systems programming & software engineering</li>
+                        <li>Mathematical computing & logic</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item reveal-up" style="--delay:0.35s" data-year="2023–Now">
+                <div class="tl-marker">
+                    <div class="tl-dot tl-dot--gkss"></div>
+                    <div class="tl-year">2023 – Now</div>
+                </div>
+                <div class="tl-card">
+                    <div class="tl-tag tl-tag--community">Community</div>
+                    <h3>GKSS Student Society · Soft Skills & Initiatives</h3>
+                    <p>Active member and contributor to the GKSS student society — participating in and leading initiatives focused on communication, leadership, and professional development. Soft skills aren't secondary; they're what make technical skill effective.</p>
+                    <ul class="tl-highlights">
+                        <li>Public speaking & communication workshops</li>
+                        <li>Collaborative project initiatives</li>
+                        <li>Peer mentoring and community building</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item reveal-up" style="--delay:0.4s" data-year="Ongoing">
+                <div class="tl-marker">
+                    <div class="tl-dot tl-dot--creative"></div>
+                    <div class="tl-year">Ongoing</div>
+                </div>
+                <div class="tl-card">
+                    <div class="tl-tag tl-tag--creative">Creative</div>
+                    <h3>Photography — Capturing the Human Moment</h3>
+                    <p>Photography isn't just a hobby — it's a way of seeing. Through a lens I practice patience, framing, and the art of finding meaning in ordinary moments. It directly informs how I think about UI, storytelling, and product design.</p>
+                    <ul class="tl-highlights">
+                        <li>Portrait, street, and event photography</li>
+                        <li>Visual composition and colour theory</li>
+                        <li>Photography as a bridge to UX thinking</li>
+                    </ul>
+                    <!-- Replace with your actual photography thumbnails -->
+                    <div class="tl-photo-grid" id="photoGrid">
+                        <div class="photo-thumb" style="background:var(--photo-1)"></div>
+                        <div class="photo-thumb" style="background:var(--photo-2)"></div>
+                        <div class="photo-thumb" style="background:var(--photo-3)"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item reveal-up" style="--delay:0.45s" data-year="Ongoing">
+                <div class="tl-marker">
+                    <div class="tl-dot tl-dot--chess"></div>
+                    <div class="tl-year">Ongoing</div>
+                </div>
+                <div class="tl-card">
+                    <div class="tl-tag tl-tag--strategy">Strategy</div>
+                    <h3>Chess — The Game of Thinking Ahead</h3>
+                    <p>Chess has sharpened how I approach problems: break complexity into moves, anticipate consequences, stay calm under pressure. The same cognitive patterns show up in debugging, architecture decisions, and business strategy.</p>
+                    <ul class="tl-highlights">
+                        <li>Pattern recognition & strategic planning</li>
+                        <li>Decision-making under constraint</li>
+                        <li>Competitive mindset applied to real problems</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="projects" id="projects">
+    <div class="container">
+        <p class="section-overline reveal-up">Built by Hand</p>
+        <h2 class="section-title reveal-up" style="--delay:0.1s">Work & Projects</h2>
+        <p class="section-sub reveal-up" style="--delay:0.15s">Things I've shipped, experimented with, and learned from. Each one a step in the bigger build.</p>
+
+        <div class="projects-grid">
+
+            <div class="project-card project-card--featured reveal-up" style="--delay:0.1s">
+                <div class="project-image">
+                    <!-- Replace with actual project screenshot -->
+                    <img src="assets/images/projects/portfolio.jpg" alt="Portfolio" onerror="this.style.display='none'" />
+                    <div class="project-image-fallback">
+                        <span class="mono">portfolio.build</span>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <div class="project-meta">
+                        <span class="project-tag">Full Stack</span>
+                        <span class="project-year">2024</span>
+                    </div>
+                    <h3>This Portfolio</h3>
+                    <p>A multi-file, production-structured portfolio site. Custom CSS architecture, animated timeline, Node.js contact backend, and photography gallery — built to be edited and owned, not templated.</p>
+                    <div class="project-stack">
+                        <span>HTML5</span><span>CSS3</span><span>Vanilla JS</span><span>Node.js</span><span>Express</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="plink">Live ↗</a>
+                        <a href="#" class="plink">GitHub ↗</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card reveal-up" style="--delay:0.15s">
+                <div class="project-image">
+                    <img src="assets/images/projects/taskmanager.jpg" alt="Task Manager" onerror="this.style.display='none'" />
+                    <div class="project-image-fallback"><span class="mono">task.app</span></div>
+                </div>
+                <div class="project-content">
+                    <div class="project-meta">
+                        <span class="project-tag">Backend</span>
+                        <span class="project-year">2024</span>
+                    </div>
+                    <h3>Task Manager</h3>
+                    <p>Full-stack task management with auth, CRUD, and real-time updates. Built to understand how backend systems hold state and serve users securely.</p>
+                    <div class="project-stack">
+                        <span>Node.js</span><span>Express</span><span>MongoDB</span><span>JWT</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="plink">Live ↗</a>
+                        <a href="#" class="plink">GitHub ↗</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card reveal-up" style="--delay:0.2s">
+                <div class="project-image">
+                    <img src="assets/images/projects/weather.jpg" alt="Weather" onerror="this.style.display='none'" />
+                    <div class="project-image-fallback"><span class="mono">weather.ui</span></div>
+                </div>
+                <div class="project-content">
+                    <div class="project-meta">
+                        <span class="project-tag">Frontend</span>
+                        <span class="project-year">2024</span>
+                    </div>
+                    <h3>Weather Dashboard</h3>
+                    <p>Real-time weather UI consuming a public API. Focused on data visualisation, async JS, and presenting complex data simply and beautifully.</p>
+                    <div class="project-stack">
+                        <span>JavaScript</span><span>Fetch API</span><span>CSS Grid</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="plink">Live ↗</a>
+                        <a href="#" class="plink">GitHub ↗</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ADD MORE PROJECTS HERE as you build them during the internship -->
+
+        </div>
+    </div>
+</section>
+
+<!-- VISION -->
+<section class="vision" id="vision">
+    <div class="container">
+        <p class="section-overline reveal-up">Where I'm Going</p>
+        <h2 class="section-title reveal-up" style="--delay:0.1s">The Vision</h2>
+
+        <div class="vision-grid">
+            <div class="vision-statement reveal-up" style="--delay:0.15s">
+                <blockquote>
+                    "I want to build products that live at the intersection of <em>human experience</em> and <em>intelligent technology</em> — systems that don't just compute, but understand."
+                </blockquote>
+                <p class="vision-body">The future I'm building toward is one where AI isn't a feature bolted onto a product — it's the soul of it. Where an interface doesn't just respond to a user, it <em>anticipates</em> them. I'm in the early chapters of that story. Every line of code, every chess move, every photograph, every leadership decision is preparation.</p>
+            </div>
+
+            <div class="vision-pillars reveal-up" style="--delay:0.25s">
+                <div class="pillar">
+                    <div class="pillar-num mono">01</div>
+                    <h4>Smart AI Products</h4>
+                    <p>Building self-aware, context-sensitive applications that learn from users and grow more useful over time.</p>
+                </div>
+                <div class="pillar">
+                    <div class="pillar-num mono">02</div>
+                    <h4>Human-Centred Design</h4>
+                    <p>Technology that disappears into the experience — invisible, intuitive, and deeply respectful of how humans actually think.</p>
+                </div>
+                <div class="pillar">
+                    <div class="pillar-num mono">03</div>
+                    <h4>Entrepreneurial Impact</h4>
+                    <p>Products built as businesses, not experiments — scalable, sustainable, and solving problems people actually have.</p>
+                </div>
+                <div class="pillar">
+                    <div class="pillar-num mono">04</div>
+                    <h4>African Innovation</h4>
+                    <p>Building from South Africa, for the world — proving that the most impactful technology can emerge from unexpected places.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+    <div class="container">
+        <p class="section-overline reveal-up">Let's Connect</p>
+        <h2 class="section-title reveal-up" style="--delay:0.1s">Start a conversation.</h2>
+        <p class="section-sub reveal-up" style="--delay:0.15s">Whether it's a collab, an opportunity, or just a thought worth sharing — I want to hear it.</p>
+
+        <div class="contact-grid">
+
+            <div class="contact-info reveal-up" style="--delay:0.2s">
+                <div class="contact-links">
+                    <a href="mailto:karabo.tladi@email.com" class="contact-link">
+                        <span class="cl-label mono">email</span>
+                        <span class="cl-value">karabo.tladi@email.com</span>
+                        <span class="cl-arrow">↗</span>
+                    </a>
+                    <a href="https://linkedin.com/in/karabotladi" target="_blank" class="contact-link">
+                        <span class="cl-label mono">linkedin</span>
+                        <span class="cl-value">linkedin.com/in/karabotladi</span>
+                        <span class="cl-arrow">↗</span>
+                    </a>
+                    <a href="https://github.com/karabotladi" target="_blank" class="contact-link">
+                        <span class="cl-label mono">github</span>
+                        <span class="cl-value">github.com/karabotladi</span>
+                        <span class="cl-arrow">↗</span>
+                    </a>
+                </div>
+
+                <div class="availability-badge">
+                    <span class="avail-dot"></span>
+                    <span>Open to opportunities — internships, collabs, conversations</span>
+                </div>
+            </div>
+
+            <!-- CONTACT FORM — connected to backend/routes/contact.js -->
+            <form class="contact-form reveal-up" id="contactForm" style="--delay:0.25s" novalidate>
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your full name" required />
+                        <span class="field-error" id="nameError"></span>
+                    </div>
+                    <div class="form-field">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="your@email.com" required />
+                        <span class="field-error" id="emailError"></span>
+                    </div>
+                </div>
+                <div class="form-field">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="What's on your mind?" />
+                </div>
+                <div class="form-field">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Tell me about your idea, project, or opportunity..." rows="5" required></textarea>
+                    <span class="field-error" id="messageError"></span>
+                </div>
+                <button type="submit" class="btn-submit" id="submitBtn">
+                    <span class="btn-text">Send Message</span>
+                    <span class="btn-loading" style="display:none">Sending...</span>
+                </button>
+                <div class="form-feedback" id="formFeedback"></div>
+            </form>
+
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-inner">
+            <div class="footer-left">
+                <span class="footer-name">Karabo Tladi</span>
+                <span class="footer-role mono">Full Stack Developer · CS Student · UWC</span>
+            </div>
+            <div class="footer-right">
+                <span class="mono footer-copy">Built from scratch · 2024</span>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- JS -->
+<script src="js/cursor.js"></script>
+<script src="js/nav.js"></script>
+<script src="js/animations.js"></script>
+<script src="js/timeline.js"></script>
+<script src="js/contact.js"></script>
+<script src="js/theme.js"></script>
+</body>
+</html>
